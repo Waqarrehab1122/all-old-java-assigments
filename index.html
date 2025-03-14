@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // 1. Create an array with five fruit names and print the second element.
+let fruits = ["Apple", "Banana", "Cherry", "Grapes", "Orange"];
+console.log(fruits[1]); // Banana
+
+// 2. Replace the third element of an array with "Mango" and print the updated array.
+fruits[2] = "Mango";
+console.log(fruits);
+
+// 3. Create an empty array and add three colors using push(). Print the array.
+let colors = [];
+colors.push("Red", "Blue", "Green");
+console.log(colors);
+
+// 4. Remove the last element of an array using pop() and print the removed element.
+let removedColor = colors.pop();
+console.log(removedColor); // Green
+
+// 5. Add two numbers at the beginning using unshift() and print the array.
+let numbers = [5, 10, 15];
+numbers.unshift(1, 2);
+console.log(numbers);
+
+// 6. Remove the first element using shift() and print the updated array.
+numbers.shift();
+console.log(numbers);
+
+// 7. Print the length of an array containing four elements.
+let arr = [10, 20, 30, 40];
+console.log(arr.length); // 4
+
+// 8. Extract the last two elements using slice() and print them.
+let lastTwo = arr.slice(-2);
+console.log(lastTwo);
+
+// 9. Extract the middle element(s) of an even-length array using slice().
+let evenArray = [10, 20, 30, 40];
+let middle = evenArray.slice(evenArray.length / 2 - 1, evenArray.length / 2 + 1);
+console.log(middle);
+
+// 10. Replace two middle elements in an array using splice().
+let exampleArr = [1, 2, 3, 4, 5, 6];
+exampleArr.splice(2, 2, "A", "B");
+console.log(exampleArr);// 11. Create an array of three cities and add a new city at the end using push().
+let cities = ["London", "Paris", "New York"];
+cities.push("Tokyo");
+console.log(cities);
+
+// 12. Remove the last city using pop() and print the updated array.
+cities.pop();
+console.log(cities);
+
+// 13. Add two new colors at the beginning using unshift().
+colors.unshift("Yellow", "Purple");
+console.log(colors);
+
+// 14. Remove the first color using shift() and print the removed color.
+let removedFirstColor = colors.shift();
+console.log(removedFirstColor);
+
+// 15. Use push() twice to add two names and print the array.
+let names = ["Alice"];
+names.push("Bob");
+names.push("Charlie");
+console.log(names);
+
+// 16. Use pop() on an array of five elements and check if the length is now four.
+let nums = [1, 2, 3, 4, 5];
+nums.pop();
+console.log(nums.length === 4); // true
+
+// 17. Use shift() on an array with three elements and print the updated array.
+let threeElems = [10, 20, 30];
+threeElems.shift();
+console.log(threeElems);
+
+// 18. Use unshift() to add a number at the beginning and print it.
+threeElems.unshift(5);
+console.log(threeElems);
+
+// 19. Create an array of three numbers, remove the last one using pop(), and print the remaining array.
+let numArr = [1, 2, 3];
+numArr.pop();
+console.log(numArr);
+
+// 20. Create an array with three elements, remove the first using shift(), and print the updated array.
+let threeElements = ["A", "B", "C"];
+threeElements.shift();
+console.log(threeElements);// 21. Extract the first three elements using slice() and print them.
+let sliceArr = [10, 20, 30, 40, 50];
+console.log(sliceArr.slice(0, 3));
+
+// 22. Extract elements from index 2 to 4 using slice().
+console.log(sliceArr.slice(2, 5));
+
+// 23. Remove two elements from index 1 using splice().
+let spliceArr = [1, 2, 3, 4, 5];
+spliceArr.splice(1, 2);
+console.log(spliceArr);
+
+// 24. Insert "Lemon" and "Orange" at index 2 using splice().
+spliceArr.splice(2, 0, "Lemon", "Orange");
+console.log(spliceArr);
+
+// 25. Remove the last two elements using splice().
+spliceArr.splice(-2, 2);
+console.log(spliceArr);
+
+// 26. Use splice() to add three numbers at the beginning.
+let numbersArr = [5, 6, 7];
+numbersArr.splice(0, 0, 1, 2, 3);
+console.log(numbersArr);
+
+// 27. Extract the last four using slice() and print them.
+let sixElemArr = [1, 2, 3, 4, 5, 6];
+console.log(sixElemArr.slice(-4));
+
+// 28. Use slice() on an array and check if the original remains unchanged.
+let originalArr = [10, 20, 30];
+let slicedArr = originalArr.slice(1);
+console.log(originalArr); // Original array remains unchanged
+
+// 29. Use splice() to remove one element from the middle and print updated array.
+let midArr = [10, 20, 30, 40];
+midArr.splice(2, 1);
+console.log(midArr);
+
+// 30. Use splice() to replace two elements in an array and print modified array.
+midArr.splice(1, 2, "X", "Y");
+console.log(midArr);// 31. Assign an array to another variable, modify the original, and print both.
+let original = [1, 2, 3];
+let copy = original;
+original.push(4);
+console.log(original, copy);
+
+// 32. Create a function that adds an element and check if the original changes.
+function addElement(arr) {
+  arr.push(99);
+}
+let testArr = [1, 2, 3];
+addElement(testArr);
+console.log(testArr);
+
+// 33. Modify first element in a function and print.
+function modifyArray(arr) {
+  arr[0] = 42;
+}
+let modifyArr = [10, 20, 30];
+modifyArray(modifyArr);
+console.log(modifyArr);
+
+// 34. Pass array to another variable, modify it, and print both.
+let arr1 = ["a", "b", "c"];
+let arr2 = arr1;
+arr2[1] = "z";
+console.log(arr1, arr2);
+
+// 35. Check if two variables referencing the same array are equal.
+console.log(arr1 === arr2); // true
+
+// 36. Remove an element in a function and print.
+function removeElement(arr) {
+  arr.pop();
+}
+let refArr = [5, 6, 7];
+removeElement(refArr);
+console.log(refArr);
+
+// 37. Modify one array using push() and print both.
+let x = [100, 200];
+let y = x;
+y.push(300);
+console.log(x, y);
+
+// 38. Use pop() inside a function and see if original changes.
+function popElement(arr) {
+  arr.pop();
+}
+let testArray = [10, 20, 30];
+popElement(testArray);
+console.log(testArray);
+
+// 39. Pass array to a function that changes its length.
+function changeLength(arr) {
+  arr.length = 2;
+}
+let lenArr = [1, 2, 3, 4];
+changeLength(lenArr);
+console.log(lenArr);
+
+// 40. Create two separate arrays with identical elements and check strict equality.
+let arrA = [1, 2, 3];
+let arrB = [1, 2, 3];
+console.log(arrA === arrB); // false (different references)
+</script>
+<body>
+    
+</body>
+</html>
